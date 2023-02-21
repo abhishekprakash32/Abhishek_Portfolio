@@ -1,0 +1,90 @@
+{% extends "master.html" %}
+{% load static %}
+{% block title %}
+  Portfolio
+{% endblock %}
+
+
+{% block content %}
+<div class="body">
+    <br>
+    <span class="left"  style="margin-left: 170px;">
+        <br><br>
+        <h1 style="color: red; font-size: 65px;">Hello!</h1>
+        <h1 class="text" style="color:#779933;">I am Abhishek Prakash,<br> a python developer. And<br>I have <strong>1.6 years</strong> experience.</h1>
+        <!-- <h3 class="text">Experience: <u>1.5 years</u></h3><hr3></hr3> -->
+    </span>
+    <span class="right"></p>
+        <img style="border-radius:8px;  margin-right: 150px;" src="{% static 'IMG-20220606-WA0000.jpg' %}" width="350" height="450">
+    </span>
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    <p class="skill" style="font-size:4vw">Skills </p>
+    <div class="row">
+      <div class="column">
+        &emsp;&emsp;<img src="{% static 'Python-logo.png' %}" alt="Snow" style="width:40%">
+        <div><br>&emsp;&emsp;&emsp;&emsp;<u class="text1">Python</u></div>
+      </div>
+      <div class="column">
+        &emsp;&emsp;<img src="{% static 'django.png' %}" alt="Forest" style="width:50%">
+        <div>&emsp;&emsp;&emsp;&emsp;&emsp;<u class="text1">django</u></div>
+      </div>
+      <div class="column">
+        <br><br><br><br>
+        &emsp;&emsp;&emsp;&emsp;<img src="{% static 'frappe.png' %}" alt="Mountains" style="width:50%">
+        <div><br><br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<u class="text1">frappe</u></div>
+      </div>
+      <div class="column">
+        <br><br><br><br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;<img src="{% static 'erpnext-logo-blue-v2.png' %}" alt="Mountains" style="width:50%">
+        <div><br><br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<u class="text1">ERPNext</u></div>
+      </div>
+      
+    </div>
+    <div class="row">
+      <div class="column">
+        &emsp;<img src="{% static 'jinja.png' %}" alt="Snow" style="width:50%">
+        <div><br><br>&emsp;&emsp;&emsp;&emsp;<u class="text1">Jinja</u></div>
+      </div>
+      <div class="column">
+        <br><br>
+        &emsp;&emsp;<img src="{% static 'html.png' %}" alt="Forest" style="width:45%">
+        <div><br>&emsp;&emsp;&emsp;&emsp;<u class="text1">HTML</u></div>
+      </div>
+      <div class="column">
+        <br><br><br><br>
+        &emsp;&emsp;&emsp;&emsp;<img src="{% static 'CSS.jpg' %}" alt="Mountains" style="width:50%">
+        <div><br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<u class="text1">CSS</u></div>
+      </div>
+      <div class="column">
+        <br><br><br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;<img src="{% static 'javascript_logo.png' %}" alt="Mountains" style="width:45%">
+        <div>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<u class="text1">JavaScript</u></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <br><br><br>
+        &emsp;<img src="{% static 'sql.png' %}" alt="Mountains" style="width:43%">
+        <div><br>&emsp;&emsp;&emsp;&emsp;<u class="text1">SQL</u></div>
+      </div>
+      <div class="column">
+        <br><br><br>
+        &emsp;&emsp;<img src="{% static 'github.jpeg' %}" alt="Mountains" style="width:50%">
+        <div><br>&emsp;&emsp;&emsp;&emsp;&emsp;<u class="text1">GitHub</u></div>
+      </div>
+      <div class="column">
+        <br><br><br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;<img src="{% static 'Test-Case-1.webp' %}" alt="Mountains" style="width:47%">
+        <div><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<u class="text1">Test Case</u></div>
+      </div>
+      <div class="column">
+        <br><br><br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;<img src="{% static 'Testing.png' %}" alt="Mountains" style="width:53%">
+        <div><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<u class="text1">Testing</u></div>
+      </div>
+    </div>
+</div>
+  
+{% endblock %}

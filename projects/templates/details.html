@@ -1,0 +1,16 @@
+{% extends "master.html" %}
+
+{% block title %}
+  Details about {{ myprojects.projectname }}
+{% endblock %}
+
+
+{% block content %}
+
+<h1>{{ myprojects.projectname }}</h1>
+  
+<p>Date: From {{ myprojects.from_date }} To {{myprojects.end_date}}</p>
+
+<p>Back to <a href="/projects">Projects</a></p>
+
+{% endblock %}

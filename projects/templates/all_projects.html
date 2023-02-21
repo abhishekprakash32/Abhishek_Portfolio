@@ -1,0 +1,28 @@
+{% extends "master.html" %}
+{% block title %}
+  My Projects - List of all projects
+{% endblock %}
+{% block content %}
+<div class="body">
+
+  <div class="right" style="color: orange; font-size: 30px;"><br><br><br><br><br><br><br>
+    
+      I work on ERPNext,<br> which is based on Python and Javascript&emsp;&emsp;<br> with MariaDB as the database.<br>I customize using <br>these technology,<br>as per client requirements-<br><br> Python - For backend<br>Frappe - For framework<br> HTML, CSS, JavaScript & Jinja- For UI <br> SQL - For report <br>
+    
+  </div>
+
+  <div class="left"  style="color: pink;">
+    <h1 style="color: red">
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<u>Delivered the projects to the client -</u>
+    </h1>
+
+      {% for x in myprojects %}
+      <ul>
+        <img src="/media/{{x.image}}" width="100">&emsp;{{x.projectname}}&emsp;<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;From <u>{{ x.from_date }}</u> To <u>{{ x.end_date }}</u><br>
+      </ul>
+      {% endfor %}
+  </div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+{% endblock %}

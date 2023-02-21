@@ -1,0 +1,41 @@
+{% extends "master.html" %}
+{% load static %}
+{% block title %}
+  About
+{% endblock %}
+{% block content %}
+<div class="body">
+    <center class="text2"> <u>About me.</u></center>
+    <h3 class="text2" style="color: #779933;">
+      <i>
+      I'm a python developer based <br> in Pune, Maharashtra.<br><br><br>
+      I have serious passion for development and creating intuitive, dynamic user experiences.<br> I specialize in building applications specific to the business needs of my clients. <br><br>
+      As a python developer, I enjoy using my obsessive attention to detail, my unequivocal love<br>  for making things,and my mission-driven work ethic to literally change the world. That's why<br> I’m excited to make a big impact at a high growth company.
+      </i>
+    </h3>
+    <br><br>
+    <div class="row">
+      <div class="column">
+        &emsp;&emsp;&emsp;&emsp;<img src="{% static 'workintime.jpg' %}" alt="Snow" style="width:50%">
+        <br>
+        <p style="color: orange; font-size: 18px;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<u>Fast</u></p>
+      </div>
+      <div class="column">
+        &emsp;&emsp;&emsp;&emsp;<img src="{% static 'hardwork.jpg' %}" alt="Snow" style="width:50%">
+        <br>
+        <p style="color: orange; font-size: 18px;"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<u>Hard Work</u></p>
+      </div>
+      <div class="column">
+        &emsp;&emsp;&emsp;&emsp;<img src="{% static 'dedicated.png' %}" alt="Snow" style="width:46%">
+        <br>
+        <p style="color: orange; font-size: 18px;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<u>Dedicated</u></p>
+      </div>
+      <div class="column">
+        &emsp;&emsp;&emsp;&emsp;<img src="{% static 'codequality.jpeg' %}" alt="Snow" style="width:50%">
+        <br>
+        <p style="color: orange; font-size: 18px;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<u>Quality</u></p>
+      </div>
+    </div>
+    <br><br>
+</div>
+{% endblock %}
